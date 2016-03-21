@@ -39,6 +39,10 @@ conda clean --lock
 
 conda info
 
+# These were specific to installing matplotlib. I really want to avoid doing this if possible, but in some cases it
+# is inevitable (without re-implementing a full OS), so I also really want to ensure we can annotate our recipes to
+# state the build dependencies at OS level, too.
+yum install -y libXext libXrender libSM tk libX11-devel
 
 # Embarking on 3 case(s).
 
@@ -46,26 +50,26 @@ conda info
     export CONDA_PY=27
     set +x
     conda build /recipe_root --quiet || exit 1
-    
+
     /feedstock_root/ci_support/upload_or_check_non_existence.py /recipe_root conda-forge --channel=main || exit 1
-    
-    
+
+
 
     set -x
     export CONDA_PY=34
     set +x
     conda build /recipe_root --quiet || exit 1
-    
+
     /feedstock_root/ci_support/upload_or_check_non_existence.py /recipe_root conda-forge --channel=main || exit 1
-    
-    
+
+
 
     set -x
     export CONDA_PY=35
     set +x
     conda build /recipe_root --quiet || exit 1
-    
+
     /feedstock_root/ci_support/upload_or_check_non_existence.py /recipe_root conda-forge --channel=main || exit 1
-    
-    
+
+
 EOF
