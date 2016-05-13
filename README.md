@@ -5,7 +5,7 @@ Home: https://github.com/scls19fr/windrose
 
 Package license: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Python Matplotlib, Numpy library to manage wind data, draw windrose.
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/windrose-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/windrose-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/windrose-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/windrose-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/windrose-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/windrose-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/windrose/badges/version.svg)](https://anaconda.org/conda-forge/windrose)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/windrose/badges/downloads.svg)](https://anaconda.org/conda-forge/windrose)
 
 
 Updating windrose-feedstock
