@@ -11,6 +11,18 @@ Summary: Python Matplotlib, Numpy library to manage wind data, draw windrose.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/windrose-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/windrose-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/windrose-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/windrose-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/windrose-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/windrose-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/windrose/badges/version.svg)](https://anaconda.org/conda-forge/windrose)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/windrose/badges/downloads.svg)](https://anaconda.org/conda-forge/windrose)
+
 Installing windrose
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `windrose` available on your platf
 ```
 conda search windrose --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/windrose-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/windrose-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/windrose-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/windrose-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/windrose-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/windrose-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/windrose/badges/version.svg)](https://anaconda.org/conda-forge/windrose)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/windrose/badges/downloads.svg)](https://anaconda.org/conda-forge/windrose)
 
 
 Updating windrose-feedstock
