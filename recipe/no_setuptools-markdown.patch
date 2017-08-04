@@ -1,0 +1,12 @@
+--- windrose-1.6.2.orig/setup.py	2017-08-02 18:05:35.000000000 -0300
++++ windrose-1.6.2/setup.py	2017-08-04 16:05:17.302868173 -0300
+@@ -20,9 +20,7 @@
+     # version='0.0.2',
+     version=__version__,
+ 
+-    setup_requires=['setuptools-markdown'],
+     description='Python Matplotlib, Numpy library to manage wind data, draw windrose (also known as a polar rose plot)',
+-    long_description_markdown_filename='README.md',
+ 
+     # The project's main homepage.
+     url=__url__,
