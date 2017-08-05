@@ -1,9 +1,9 @@
 About windrose
 ==============
 
-Home: https://github.com/scls19fr/windrose
+Home: https://github.com/python-windrose/windrose
 
-Package license: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Package license: CeCILL-2.1
 
 Feedstock license: BSD 3-Clause
 

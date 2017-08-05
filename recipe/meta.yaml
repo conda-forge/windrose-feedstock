@@ -1,15 +1,14 @@
-{% set version = "1.6" %}
+{% set version = "1.6.2" %}
 
 package:
   name: windrose
   version: {{ version }}
 
 source:
-  fn: windrose-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/w/windrose/windrose-{{ version }}.tar.gz
-  sha256: cbeb0f178944f1838bc84e87bac177e6a8d98478703f559528f5d72aa1e888fa
+  sha256: 9834a959efcd622ed77a9388d3fb38b78a5cd473eb78bd964c600413f914844d
   patches:
-    - setup-patch.patch
+    - no_setuptools-markdown.patch
 
 build:
   number: 0
@@ -29,8 +28,9 @@ test:
     - windrose
 
 about:
-  home: https://github.com/scls19fr/windrose
-  license: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+  home: https://github.com/python-windrose/windrose
+  license: CeCILL-2.1
+  # license_file: LICENCE
   summary: 'Python Matplotlib, Numpy library to manage wind data, draw windrose.'
 
 extra:
