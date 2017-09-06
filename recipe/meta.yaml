@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 
 package:
   name: windrose
@@ -6,12 +6,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/windrose/windrose-{{ version }}.tar.gz
-  sha256: 9834a959efcd622ed77a9388d3fb38b78a5cd473eb78bd964c600413f914844d
+  sha256: 10a50ee2670085c572ffca1027b34d4a40c8cae79fe756f6d3a78c12d809112b
   patches:
     - no_setuptools-markdown.patch
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
