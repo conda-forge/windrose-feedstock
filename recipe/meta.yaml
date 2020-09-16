@@ -1,4 +1,4 @@
-{% set version = "1.6.7" %}
+{% set version = "1.6.8" %}
 
 package:
   name: windrose
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/windrose/windrose-{{ version }}.tar.gz
-  sha256: d9073d05d3972bb9b99d37bea72fbb1def55a0bac070a1a10799341ea6eacb61
+  sha256: dc562722fc91c16cbfece39e7218bb4c85c9ed2121ef18eb118036a5eadafaac
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -29,8 +29,8 @@ test:
 about:
   home: https://github.com/python-windrose/windrose
   license: BSD-3-Clause
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENCE_BSD-3-Clause.TXT'
-  summary: 'Python Matplotlib, Numpy library to manage wind data, draw windrose.'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENCE_BSD-3-Clause.TXT
+  summary: Python Matplotlib, Numpy library to manage wind data, draw windrose.
 
 extra:
   recipe-maintainers:

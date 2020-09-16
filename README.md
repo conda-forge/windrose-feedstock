@@ -5,7 +5,7 @@ Home: https://github.com/python-windrose/windrose
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python Matplotlib, Numpy library to manage wind data, draw windrose.
 
