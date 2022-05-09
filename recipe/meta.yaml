@@ -11,16 +11,18 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - matplotlib-base
     - numpy
+    - pandas
+    - scipy
 
 test:
   imports:
@@ -29,7 +31,7 @@ test:
 about:
   home: https://github.com/python-windrose/windrose
   license: BSD-3-Clause
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENCE_BSD-3-Clause.TXT
+  license_file: LICENCE_BSD-3-Clause.txt
   summary: Python Matplotlib, Numpy library to manage wind data, draw windrose.
 
 extra:
