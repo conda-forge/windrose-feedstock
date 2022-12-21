@@ -1,4 +1,4 @@
-{% set version = "1.8.0" %}
+{% set version = "1.8.1" %}
 
 package:
   name: windrose
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/windrose/windrose-{{ version }}.tar.gz
-  sha256: 40f1da0531626bec5207d5b7bd6d1c4ffc2df597e94c81ce5dd0d59ecf86e86d
+  sha256: 2b03ebb5f98234a524313d8a729b503d0825ac5ed507fef66af793d31798064c
 
 build:
   number: 0
