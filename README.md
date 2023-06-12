@@ -1,11 +1,11 @@
-About windrose
-==============
+About windrose-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/windrose-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-windrose/windrose
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/windrose-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python Matplotlib, Numpy library to manage wind data, draw windrose (also known as a polar rose plot)
 
