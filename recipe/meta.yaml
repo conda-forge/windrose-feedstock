@@ -1,5 +1,5 @@
 {% set name = "windrose" %}
-{% set version = "1.9.2" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/windrose-{{ version }}.tar.gz
-  sha256: 70200afe01721bfe4a10ea26cbcc3e5c23800566921bbb8a34b0f68ade488bfa
+  sha256: 9e1328206b9a85a80169314decd3fb2ef077bab7e0800ca9420c6c31650cf054
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
