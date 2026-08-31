@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  name: windrose
+  version: "1.10.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/windrose-${{ version }}.tar.gz
+  sha256: 9e1328206b9a85a80169314decd3fb2ef077bab7e0800ca9420c6c31650cf054
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}
+    - setuptools
+    - setuptools-scm
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - matplotlib-base >=3
+    - numpy >=1.21
+
+tests:
+  - python:
+      imports:
+        - windrose
+      pip_check: true
+      python_version:
+        - ${{ python_min }}
+        - "*"
+
+about:
+  summary: Python Matplotlib, Numpy library to manage wind data, draw windrose (also known as a polar rose plot)
+  license: BSD-3-Clause
+  license_file: LICENCE_BSD-3-Clause.txt
+  homepage: https://github.com/python-windrose/windrose
+
+extra:
+  recipe-maintainers:
+    - akrherz
+    - ocefpaf
