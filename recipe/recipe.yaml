@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: windrose
-  version: "1.10.0"
+  version: "2.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/windrose-${{ version }}.tar.gz
-  sha256: 9e1328206b9a85a80169314decd3fb2ef077bab7e0800ca9420c6c31650cf054
+  sha256: 205456062db8025b846eaa344a2da5b42eb54ee5a498450f424bac236092da53
 
 build:
   number: 0
